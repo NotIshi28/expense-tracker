@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "date": "2024-01-15",
+        "description": "Grocery Shopping",
+        "amount": 120.50,
+        "category": "Food"
+    },
+    {
+        "id": 2,
+        "date": "2024-01-16",
+        "description": "Bus Ticket",
+        "amount": 25.00,
+        "category": "Transportation"
+    },
+    {
+        "id": 3,
+        "date": "2024-01-18",
+        "description": "Movie Night",
+        "amount": 35.00,
+        "category": "Entertainment"
+    },
+    {
+        "id": 4,
+        "date": "2024-01-20",
+        "description": "Rent Payment",
+        "amount": 1200.00,
+        "category": "Housing"
+    },
+    {
+        "id": 5,
+        "date": "2024-02-01",
+        "description": "Restaurant Dinner",
+        "amount": 75.30,
+        "category": "Food"
+    },
+    {
+        "id": 6,
+        "date": "2024-02-03",
+        "description": "Taxi Ride",
+        "amount": 22.50,
+        "category": "Transportation"
+    },
+    {
+        "id": 7,
+        "date": "2024-02-05",
+        "description": "Internet Bill",
+        "amount": 65.00,
+        "category": "Housing"
+    },
+    {
+        "id": 8,
+        "date": "2024-02-10",
+        "description": "Concert Tickets",
+        "amount": 150.00,
+        "category": "Entertainment"
+    },
+    {
+        "id": 9,
+        "date": "2024-02-15",
+        "description": "Office Supplies",
+        "amount": 45.75,
+        "category": "Other"
+    },
+    {
+        "id": 10,
+        "date": "2024-02-20",
+        "description": "Gym Membership",
+        "amount": 50.00,
+        "category": "Other"
+    }
+]
