@@ -148,21 +148,21 @@ def main():
         
         
         with st.expander("📤 Data Management", expanded=False):
-            expenses_file = st.file_uploader("Upload Expenses JSON", type=['json'])
-            if expenses_file is not None:
-                try:
-                    st.session_state.expenses = json.load(expenses_file)
-                    st.success("Expenses loaded successfully!")
-                except Exception as e:
-                    st.error(f"Error loading expenses: {str(e)}")
-
-            budgets_file = st.file_uploader("Upload Budgets JSON", type=['json'])
-            if budgets_file is not None:
-                try:
-                    st.session_state.budgets = json.load(budgets_file)
-                    st.success("Budgets loaded successfully!")
-                except Exception as e:
-                    st.error(f"Error loading budgets: {str(e)}")
+            try:
+                with open('sample_expenses.json', 'r') as file:
+                    st.session_state.expenses = json.load(file)
+                    st.success("Sample expenses loaded successfully!")
+            except Exception as e:
+                st.error(f"Error loading sample expenses: {str(e)}")
+                st.info("Make sure sample_expenses.json exists in the same directory")
+                
+            try:
+                with open('sample_budgets.json', 'r') as file:
+                    st.session_state.budgets = json.load(file)
+                    st.success("Sample budgets loaded successfully!")
+            except Exception as e:
+                st.error(f"Error loading sample budgets: {str(e)}")
+                st.info("Make sure sample_budgets.json exists in the same directory")
 
     
     page = st.sidebar.radio(
